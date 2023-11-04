@@ -1,0 +1,1 @@
+SELECT COUNT(orderID) as total_order , customerID FROM orders GROUP BY customerID;
