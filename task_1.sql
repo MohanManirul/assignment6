@@ -1,1 +1,1 @@
-SELECT COUNT(orderID) as total_order , customerID FROM orders GROUP BY customerID;
+SELECT orders.customerID , COUNT(orderID) as total_order , name ,email, location FROM orders , customers WHERE customers.id = orders.customerID GROUP BY customerID ORDER BY COUNT(orderID)
