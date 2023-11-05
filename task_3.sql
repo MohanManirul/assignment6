@@ -1,0 +1,1 @@
+SELECT categories.name , quantity*unit_price as total_revenue FROM order_items , categories WHERE categories.id = order_items.category_id ORDER BY total_revenue DESC;
